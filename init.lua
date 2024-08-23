@@ -1,10 +1,7 @@
 local np_terrain = {
---	offset = -13,
 	offset = -11*mult,						
 	scale = 40*mult,
---	scale = 30,
 	spread = {x = 256*mult, y =256*mult, z = 256*mult},
---	spread = {x = 128, y =128, z = 128},
 	seed = 2,
 	octaves = convex and 1 or 8,
 	persist = 1.00,
@@ -41,7 +38,6 @@ local np_cliffs = {
 	octaves = 2,
 	persist = 0.4,
 	lacunarity = 2.11,
---	flags = "absvalue"
 }
 
 local np_trees = {
@@ -52,5 +48,4 @@ local np_trees = {
 	octaves = 5,
 	persist = 3,
 	lacunarity = 3.21,
---	flags = "absvalue"
 }
