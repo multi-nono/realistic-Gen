@@ -1,3 +1,11 @@
+inetest.register_on_generated(function(minp, maxp, seed)
+    local manip = minetest.get_voxel_manip()
+    local e1, e2 = manip:read_from_map(minp4, maxp)
+    local area = VoxelArea:new({MinEdge = e1, MaxEdge = e2})
+    local data = manip:get_data()
+
+    local c_air = minetest.get_content_id("air")
+
 local np_terrain = {
 	offset = -11*mult,						
 	scale = 40*mult,
