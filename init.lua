@@ -1,4 +1,4 @@
-inetest.register_on_generated(function(minp, maxp, seed)
+minetest.register_on_generated(function(minp, maxp, seed)
     local manip = minetest.get_voxel_manip()
     local e1, e2 = manip:read_from_map(minp4, maxp)
     local area = VoxelArea:new({MinEdge = e1, MaxEdge = e2})
