@@ -8,7 +8,7 @@ minetest.register_on_generated(function(minp, maxp, seed)
 
 local np_terrain = {
 	offset = -11*mult,						
-	scale = 40*mult,
+	scale = 100*mult,
 	spread = {x = 256*mult, y =256*mult, z = 256*mult},
 	seed = 12345,
 	octaves = convex and 1 or 8,
